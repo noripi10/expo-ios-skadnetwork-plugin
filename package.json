@@ -1,0 +1,28 @@
+{
+  "name": "expo-ios-skadnetwork-plugin",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "clean & EXPO_NONINTERACTIVE=1 expo-module build plugin",
+    "clean": "expo-module clean plugin",
+    "test": "expo-module test plugin",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },
+  "description": "react native ios skadnetwork writing(info.plist)",
+  "main": "index.js",
+  "types": "",
+  "author": "noripi10",
+  "license": "MIT",
+  "devDependencies": {
+    "expo-module-scripts": "^3.0.4",
+    "jest": "^29.3.1"
+  },
+  "homepage": "https://github.com/noripi10/expo-ios-skadnetwork-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noripi10/expo-ios-skadnetwork-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noripi10/expo-ios-skadnetwork-plugin/issues"
+  }
+}
