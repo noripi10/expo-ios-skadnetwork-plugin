@@ -6,7 +6,7 @@ react native ios skadnetwork writing(info.plist)
 
 - [Prepare for iOS 14+](https://developers.google.com/admob/ios/ios14)
 
-SKAdNetworkItems can be customized. The specified values are set as described in the documentation above.
+SKAdNetworkItems can be customized. If no optional values are set, the values listed in the documentation above will be set as default values.
 
 # Installation in managed Expo projects
 
@@ -26,6 +26,27 @@ app.json
 
 ```json
 "plugins": [
-  "expo-ios-skadnetwork-plugin"
+  [
+    "expo-ios-skadnetwork-plugin/plugin/build",
+    // option string array
+    [
+      "aaa",
+      "bbb"
+    ]
+  ]
 ]
+```
+
+```plist
+<key>SKAdNetworkItems</key>
+<array>
+  <dict>
+    <key>SKAdNetworkIdentifier</key>
+    <string>aaa</string>
+  </dict>
+  <dict>
+    <key>SKAdNetworkIdentifier</key>
+    <string>bbb</string>
+  </dict>
+</array>
 ```
