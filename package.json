@@ -1,6 +1,6 @@
 {
   "name": "expo-ios-skadnetwork-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "build": "clean & EXPO_NONINTERACTIVE=1 expo-module build plugin",
     "clean": "expo-module clean plugin",
@@ -15,6 +15,7 @@
   "author": "noripi10",
   "license": "MIT",
   "devDependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
     "expo-module-scripts": "^3.1.0",
     "jest": "^29.3.1",
     "release-it": "^17.0.0"
